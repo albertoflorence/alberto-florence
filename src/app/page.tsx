@@ -1,11 +1,10 @@
-import React from 'react';
-
 import Avatar from '@/components/Avatar';
 import { Button } from '@/components/Button';
 import Info from '@/components/Info';
 import MySkills from '@/components/MySkills';
 import Profile from '@/components/Profile';
 import Footer from '@/components/Footer';
+import ChangeTheme from '@/components/ChangeTheme';
 
 const texts = [
   ['10', 'Years of work experience'],
@@ -16,6 +15,7 @@ const texts = [
 export default function Home() {
   return (
     <main className="mx-auto flex min-h-screen max-w-5xl flex-col items-center">
+      <ChangeTheme />
       <header className="max-w-2xl">
         <section className="flex items-center justify-center gap-10">
           <Avatar />
