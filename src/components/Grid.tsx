@@ -14,8 +14,8 @@ export default function Grid({ items, show }: GridProps) {
         show ? 'animate-swipeStart' : ' invisible absolute animate-swipeEnd',
       )}
     >
-      {items.map((item) => (
-        <Card key={item}>{item}</Card>
+      {items.map((item, index) => (
+        <Card key={index}>{item}</Card>
       ))}
     </div>
   );
