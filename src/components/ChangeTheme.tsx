@@ -12,10 +12,14 @@ export default function ChangeTheme() {
   }, [dark]);
   return (
     <div
-      className="my-12 cursor-pointer rounded-full bg-bgDarkLight p-6 duration-200 hover:scale-105 hover:brightness-200"
+      className="my-12 cursor-pointer rounded-full p-6 duration-300 hover:bg-white/50 hover:shadow-md hover:brightness-75 hover:dark:bg-bgDarkLight/50 hover:dark:brightness-200"
       onClick={() => setDark((s) => !s)}
     >
-      {!dark ? <Brightness size={40} /> : <Moon size={40} />}
+      {!dark ? (
+        <Brightness size={40} className="fill-gray-300 dark:fill-gray-100" />
+      ) : (
+        <Moon size={40} className="fill-gray-300 dark:fill-gray-100" />
+      )}
     </div>
   );
 }

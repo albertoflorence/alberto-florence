@@ -27,8 +27,10 @@ export default function Home() {
           ))}
         </section>
         <section className="flex gap-4 ">
-          <Button className="bg-orange">Download CV</Button>
-          <Button className="bg-bgDarkLight text-gray-100">Contact me</Button>
+          <Button className="bg-orange text-gray-300 shadow-md">Download CV</Button>
+          <Button className="bg-white text-gray-300 shadow-md dark:bg-bgDarkLight dark:text-gray-100">
+            Contact me
+          </Button>
         </section>
       </header>
       <MySkills />

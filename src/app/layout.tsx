@@ -1,3 +1,4 @@
+import clsx from 'clsx';
 import './globals.css';
 import { Poppins } from 'next/font/google';
 
@@ -11,7 +12,7 @@ export const metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="pt-br" className="max-sm:text-[10px]">
-      <body className={poppins.className + ' bg-bgDark'}>{children}</body>
+      <body className={clsx(poppins.className, 'bg-bgLight dark:bg-bgDark')}>{children}</body>
     </html>
   );
 }
