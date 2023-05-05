@@ -23,20 +23,6 @@ module.exports = {
         orange: '#d47559',
       },
     },
-    keyframes: {
-      swipeStart: {
-        '0%': { transform: 'translateX(-40%)' },
-        '100%': { transform: 'translateX(0)' },
-      },
-      swipeEnd: {
-        '0%': { transform: 'translateX(0)' },
-        '100%': { transform: 'translateX(150%)' },
-      },
-    },
-    animation: {
-      swipeStart: 'swipeStart 0.2s ease-in-out',
-      swipeEnd: 'swipeEnd 0.2s ease-in-out forwards',
-    },
   },
   plugins: [],
 };
