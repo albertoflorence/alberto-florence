@@ -2,16 +2,23 @@ import clsx from 'clsx';
 import Card from './Card';
 
 interface GridProps {
-  items: number[];
-  show: boolean;
+  items: React.ReactNode[];
+  cols?: string;
+  className?: string;
 }
 
-export default function Grid({ items, show }: GridProps) {
+const gridCols: { [col: string]: string } = {
+  2: 'lg:grid-cols-[repeat(2,_360px)]',
+  3: 'lg:grid-cols-[repeat(3,_230px)]',
+};
+
+export default function Grid({ items, cols = '2', className }: GridProps) {
   return (
     <div
       className={clsx(
-        'grid w-full grid-cols-[minmax(368px,1fr)] justify-center gap-8 px-1 lg:grid-cols-[repeat(2,_368px)]',
-        show ? 'animate-swipeStart' : ' invisible absolute animate-swipeEnd',
+        'grid w-full grid-cols-[minmax(360px,1fr)] justify-center gap-8 p-1',
+        gridCols[cols],
+        className,
       )}
     >
       {items.map((item, index) => (
