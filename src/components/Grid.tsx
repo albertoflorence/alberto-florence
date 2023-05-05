@@ -8,8 +8,8 @@ interface GridProps {
 }
 
 const gridCols: { [col: string]: string } = {
-  2: 'lg:grid-cols-[repeat(2,_360px)]',
-  3: 'lg:grid-cols-[repeat(3,_230px)]',
+  2: 'md:grid-cols-[repeat(2,_360px)]',
+  3: 'md:grid-cols-[repeat(3,_230px)]',
 };
 
 export default function Grid({ items, cols = '2', className }: GridProps) {
