@@ -1,7 +1,7 @@
 import Avatar from '@/components/Avatar';
 import { Button } from '@/components/Button';
 import Info from '@/components/Info';
-import MySkills from '@/components/MySkills';
+import Showcase from '@/components/Showcase';
 import Profile from '@/components/Profile';
 import Footer from '@/components/Footer';
 import ChangeTheme from '@/components/ChangeTheme';
@@ -43,7 +43,7 @@ export default function Home({ visible }: HomeProps) {
           </Button>
         </section>
       </header>
-      <MySkills />
+      <Showcase />
       <Footer />
     </main>
   );
