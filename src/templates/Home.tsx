@@ -6,6 +6,7 @@ import Profile from '@/components/Profile';
 import Footer from '@/components/Footer';
 import ChangeTheme from '@/components/ChangeTheme';
 import clsx from 'clsx';
+import AboutMe from '@/components/AboutMe';
 
 const texts = [
   ['10', 'Years of work experience'],
@@ -38,9 +39,7 @@ export default function Home({ visible }: HomeProps) {
         </section>
         <section className="flex gap-4 ">
           <Button className="bg-orange text-gray-300 shadow-md">Download CV</Button>
-          <Button className="bg-white text-gray-300 shadow-md dark:bg-bgDarkLight dark:text-gray-100">
-            Contact me
-          </Button>
+          <AboutMe />
         </section>
       </header>
       <Showcase />
