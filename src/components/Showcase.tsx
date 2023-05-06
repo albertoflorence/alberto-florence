@@ -15,13 +15,12 @@ export default function MySkills() {
       <Switch on={on} onChange={setOn} />
       <section
         className={clsx(
-          !on && '-translate-x-1/2',
-          'transition-transform',
-          'relative flex w-[200%] rounded-lg',
+          'relative flex w-[200%] items-start rounded-lg transition-transform',
+          on ? '-translate-x-1/2 max-md:h-[1000px] max-sm:h-full' : 'max-sm:h-[1400px]',
         )}
       >
-        <Skills />
         <Portfolio />
+        <Skills />
       </section>
     </section>
   );
