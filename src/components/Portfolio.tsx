@@ -7,8 +7,8 @@ export default function Portfolio() {
   return (
     <Grid
       items={projects.map(({ image, link, title, description }) => (
-        <div key={image}>
-          <Image title={title} src={`/images/${image}`} alt={title} fill className="grayscale-0" />
+        <div key={image} className="relative h-full w-full">
+          <Image title={title} src={`/images/${image}`} alt={title} fill sizes="370px" />
           <div className="absolute inset-0 flex select-none flex-col items-center justify-evenly bg-orange text-white opacity-0 shadow-zinc-600 transition-opacity text-shadow hover:opacity-90">
             <h3 className="text-2xl drop-shadow-2xl">{title}</h3>
             <p className="max-w-xs justify-center text-center">{description}</p>
@@ -71,5 +71,4 @@ const projects = [
     description:
       'Projeto de uma Api RESTful com integração de várias techs como: Typescript, Express, MongoDB, Jest, Docker, Swagger',
   },
-  { image: 'Group 8.jpg', link: '#', title: '' },
 ];
