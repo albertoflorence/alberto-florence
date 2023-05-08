@@ -8,12 +8,6 @@ import ChangeTheme from '@/components/ChangeTheme';
 import clsx from 'clsx';
 import AboutMe from '@/components/AboutMe';
 
-const texts = [
-  ['Currently studying programming'],
-  ['Excited to collaborate with others'],
-  ['Committed to continuous improvement'],
-];
-
 interface HomeProps {
   visible: boolean;
 }
