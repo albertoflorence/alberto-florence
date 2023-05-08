@@ -9,9 +9,9 @@ import clsx from 'clsx';
 import AboutMe from '@/components/AboutMe';
 
 const texts = [
-  ['10', 'Years of work experience'],
-  ['50+', 'Completed projects'],
-  ['20+', 'Satisfied customers'],
+  ['Currently studying programming'],
+  ['Excited to collaborate with others'],
+  ['Committed to continuous improvement'],
 ];
 
 interface HomeProps {
@@ -32,11 +32,7 @@ export default function Home({ visible }: HomeProps) {
           <Avatar />
           <Info />
         </section>
-        <section className="my-16 grid w-full grid-cols-3 ">
-          {texts.map(([first, second]) => (
-            <Profile first={first} second={second} key={second} />
-          ))}
-        </section>
+        <Profile />
         <section className="flex gap-4 ">
           <Button className="bg-orange text-gray-300 shadow-md">Download CV</Button>
           <AboutMe />
