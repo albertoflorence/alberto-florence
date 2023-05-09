@@ -16,8 +16,9 @@ export const useTheme = () => {
 const getTheme = () => {
   try {
     const isDark =
-      ('theme' in localStorage && getStorageItem('theme')) ||
-      window.matchMedia('(prefers-color-scheme: dark)').matches;
+      'theme' in localStorage
+        ? getStorageItem('theme')
+        : window.matchMedia('(prefers-color-scheme: dark)').matches;
 
     return Boolean(isDark);
   } catch {
