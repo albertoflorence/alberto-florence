@@ -1,9 +1,16 @@
 import Image from 'next/image';
+import { useState } from 'react';
+import Stories from './Stories';
 
 export default function Avatar() {
+  const [open, setOpen] = useState(false);
+
   return (
-    <div className="h-52 w-52 shrink-0">
-      <div className="relative flex h-full w-full items-center justify-center overflow-hidden rounded-full border-[3px] border-orange bg-white">
+    <section>
+      <div
+        onClick={() => setOpen(true)}
+        className="relative flex h-52 w-52 shrink-0 cursor-pointer items-center justify-center overflow-hidden rounded-full border-[3px] border-orange bg-white"
+      >
         <Image
           src="/images/avatar.jpg"
           width={192}
@@ -13,6 +20,7 @@ export default function Avatar() {
           className="rounded-full"
         />
       </div>
-    </div>
+      <Stories open={open} onClose={() => setOpen(false)} />
+    </section>
   );
 }
