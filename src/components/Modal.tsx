@@ -25,7 +25,7 @@ export default function Modal({ open, onClose, children, className }: ModalProps
     <dialog
       ref={modalRef}
       onClick={({ target }) => onClose && target === modalRef.current && onClose()}
-      className="rounded-xl p-0  backdrop:bg-black/50 dark:bg-slate-800 dark:text-gray-50"
+      className="overflow-visible rounded-xl p-0 backdrop:bg-black/50 dark:bg-slate-800 dark:text-gray-50"
     >
       <div className={className}>{children}</div>
     </dialog>

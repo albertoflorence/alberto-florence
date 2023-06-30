@@ -21,12 +21,12 @@ export default function Stories({ open, onClose }: StoriesProps) {
   };
 
   return (
-    <Modal open={open} className="relative w-80 overflow-hidden" onClose={onClose}>
+    <Modal open={open} className="relative w-80 overflow-hidden rounded-xl" onClose={onClose}>
       <div className="flex h-[600px] w-[1600px] transition-transform" style={style}>
         {stories.map(({ subtitle, image }) => (
           <div
             key={subtitle}
-            className="relative flex h-[600px] w-80 cursor-pointer justify-center"
+            className="relative flex h-[600px] w-80 cursor-pointer justify-center overflow-hidden"
             onClick={handleClick}
           >
             <Image
