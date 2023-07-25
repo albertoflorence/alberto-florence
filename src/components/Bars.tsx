@@ -15,5 +15,7 @@ export default function Bars({ quantity, current }: BarsProps) {
       )}
     />
   ));
-  return <div className="absolute top-0 flex w-full justify-evenly gap-0.5 p-3">{elements}</div>;
+  return (
+    <div className="absolute top-0 flex w-full justify-evenly gap-0.5 p-4 lg:p-3">{elements}</div>
+  );
 }

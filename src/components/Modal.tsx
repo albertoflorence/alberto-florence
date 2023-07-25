@@ -1,13 +1,23 @@
+import clsx from 'clsx';
 import { useRef, useEffect } from 'react';
 
 interface ModalProps {
   open: boolean;
   onClose?: () => void;
+  onClick?: () => void;
   children?: React.ReactNode;
   className?: string;
+  fullScreen?: boolean;
 }
 
-export default function Modal({ open, onClose, children, className }: ModalProps) {
+export default function Modal({
+  open,
+  children,
+  className,
+  fullScreen,
+  onClose,
+  onClick,
+}: ModalProps) {
   const modalRef = useRef<HTMLDialogElement>(null);
 
   useEffect(() => {
@@ -25,9 +35,14 @@ export default function Modal({ open, onClose, children, className }: ModalProps
     <dialog
       ref={modalRef}
       onClick={({ target }) => onClose && target === modalRef.current && onClose()}
-      className="overflow-visible rounded-xl p-0 backdrop:bg-black/50 dark:bg-slate-800 dark:text-gray-50"
+      className={clsx(
+        'overflow-visible p-0 outline-none backdrop:bg-black/50 dark:text-gray-50',
+        fullScreen ? 'bg-transparent max-lg:m-0' : 'rounded-xl dark:bg-slate-800',
+      )}
     >
-      <div className={className}>{children}</div>
+      <div className={className} onClick={onClick}>
+        {children}
+      </div>
     </dialog>
   );
 }
