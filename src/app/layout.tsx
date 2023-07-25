@@ -12,7 +12,7 @@ export const metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="pt-br" className="max-sm:text-[10px]">
-      <body className={clsx(poppins.className, 'bg-bgLight dark:bg-bgDark')}>{children}</body>
+      <body className={clsx(poppins.className, 'bg-bgLight p-1 dark:bg-bgDark')}>{children}</body>
     </html>
   );
 }

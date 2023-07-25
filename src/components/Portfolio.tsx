@@ -19,19 +19,29 @@ export default function Portfolio() {
       <Grid
         items={projects.map(({ image, link, title, description, video }) => (
           <div key={image} className="relative h-full w-full">
-            <Image title={title} src={`/images/${image}`} alt={title} fill sizes="370px" />
+            <Image
+              title={title}
+              src={`/images/${image}`}
+              alt={title}
+              fill
+              className="object-cover"
+            />
             <div className="absolute inset-0 flex select-none flex-col items-center justify-evenly bg-orange text-white opacity-0 shadow-zinc-600 transition-opacity text-shadow hover:opacity-90">
               <h3 className="text-2xl drop-shadow-2xl">{title}</h3>
               <p className="max-w-xs justify-center text-center">{description}</p>
               <div className="flex gap-3">
-                <a href={link} target="_blank" className="h-12 w-12 rounded-full bg-white p-3">
+                <a
+                  href={link}
+                  target="_blank"
+                  className="flex h-[48px] w-[48px] items-center justify-center rounded-full bg-white p-3"
+                >
                   <LinkIcon size={24} />
                 </a>
                 {video && (
                   <button
                     aria-label="assistir vídeo"
                     onClick={() => handleGalleryOpen(title)}
-                    className="flex h-12 w-12 items-center justify-center rounded-full bg-white text-black"
+                    className="flex h-[48px] w-[48px] items-center justify-center rounded-full bg-white"
                   >
                     <Play size={36} />
                   </button>
@@ -43,7 +53,11 @@ export default function Portfolio() {
         cols="2"
       />
       <Modal open={open} onClose={() => setOpen(false)}>
-        <Gallery items={projectWithVideos} initialIndex={selectProject} />
+        <Gallery
+          items={projectWithVideos}
+          initialIndex={selectProject}
+          onClose={() => setOpen(false)}
+        />
       </Modal>
     </>
   );
@@ -65,7 +79,32 @@ const projects = [
   },
   {
     video:
-      'https://dms-exp3.licdn.com/playlist/vid/D4D05AQHwuoZ1XUG7nw/mp4-720p-30fp-crf28/0/1682527221949?e=1688749200&v=beta&t=aiQ-hviCikKEEcw0npeQa1ZdPjF205nj1RRoqQ95g6g',
+      'https://dms-exp2.licdn.com/playlist/vid/D4D05AQF14Eg1amyJbQ/mp4-720p-30fp-crf28/0/1689951224727?e=1690905600&v=beta&t=SMqHSm4b242ksbmyTfzceZGrPxbAbGDXGc5so9hTzzk',
+    image: 'recipes-app.jpg',
+    link: '#',
+    title: 'Recipes App',
+    description: (
+      <span>
+        Projeto de conclusão de módulo da {Trybe}, feito usando React, React Router, Redux e
+        consumindo uma API
+      </span>
+    ),
+  },
+  {
+    video:
+      'https://dms-exp2.licdn.com/playlist/vid/D4D05AQEE8D0-zKoy7w/mp4-720p-30fp-crf28/0/1688759152336?e=1690905600&v=beta&t=fQA3QII1e8Kw89MvQ6AfkTNhk9PWGN4dgB_WYDX8NMI',
+    image: 'starwars.jpg',
+    link: '#',
+    title: 'Star Wars',
+    description: (
+      <span>
+        Projeto desenvolvido no módulo de front-end da {Trybe}, feito usando React e Context Api
+      </span>
+    ),
+  },
+  {
+    video:
+      'https://dms-exp2.licdn.com/playlist/vid/D4D05AQHwuoZ1XUG7nw/mp4-720p-30fp-crf28/0/1682527221949?e=1690905600&v=beta&t=i__yPB5JrkXBK9gxGo-M8zEyiWWHnSIB_oq9DUBUjD4',
     image: 'pixel-art.jpg',
     link: '#',
     title: 'Pixel Art',
@@ -77,7 +116,7 @@ const projects = [
   },
   {
     video:
-      'https://dms-exp3.licdn.com/playlist/vid/D4D05AQG7paqE4vUW9Q/mp4-720p-30fp-crf28/0/1688060209459?e=1688745600&v=beta&t=xzqTlMOnNfSLTANiJYXi0gyC1HoRrV7mqfH-fX9D6ks',
+      'https://dms-exp2.licdn.com/playlist/vid/D4D05AQG7paqE4vUW9Q/mp4-720p-30fp-crf28/0/1688060209459?e=1690905600&v=beta&t=pDXq5cw-SbY5hpBjAK6QcGmG8KMbZ_yJz3c8rnbLgzM',
     image: 'trivia.jpg',
     link: '#',
     title: 'Trivia',
@@ -90,7 +129,7 @@ const projects = [
   },
   {
     video:
-      'https://dms-exp3.licdn.com/playlist/vid/D4D05AQFXQkZWrFVjyg/mp4-720p-30fp-crf28/0/1686929809761?e=1688749200&v=beta&t=-BDSGGtC9O3XqQKtVNpgI8ZM-1MjiPLmdp6gHVyhvOI',
+      'https://dms-exp2.licdn.com/playlist/vid/D4D05AQFXQkZWrFVjyg/mp4-720p-30fp-crf28/0/1686929809761?e=1690905600&v=beta&t=ELKu4qy9zCO9EX1H6i5xgjA-SlUsZCMJkKI3WgwjvJs',
     image: 'wallet.jpg',
     link: '#',
     title: 'Trybe Wallet',
@@ -103,7 +142,7 @@ const projects = [
   },
   {
     video:
-      'https://dms-exp3.licdn.com/playlist/vid/D4D05AQHOQL_HNcKIyw/mp4-720p-30fp-crf28/0/1683918495005?e=1688752800&v=beta&t=JasLA1MCggh3NI7_ADC8kXV7m9uXJFpXt1Weaow9pFQ',
+      'https://dms-exp2.licdn.com/playlist/vid/D4D05AQHOQL_HNcKIyw/mp4-720p-30fp-crf28/0/1683918495005?e=1690905600&v=beta&t=4dXRKssWXU3WBDiJMTKySlEx_J09-9ZrW1L019PBfoc',
     image: 'tryunfo.jpg',
     link: '#',
     title: 'Tryunfo',
@@ -113,7 +152,7 @@ const projects = [
   },
   {
     video:
-      'https://dms-exp3.licdn.com/playlist/vid/D4D05AQHU1mek2Dr3uA/mp4-720p-30fp-crf28/0/1684534867614?e=1688752800&v=beta&t=sWdjdVN2KC84gPI9ILn5dQGxV8VAmDfVjr3vzRobqBM',
+      'https://dms-exp2.licdn.com/playlist/vid/D4D05AQHU1mek2Dr3uA/mp4-720p-30fp-crf28/0/1684534867614?e=1690905600&v=beta&t=ivZa_duykFbsdyg7GOCauP567yYHecGxNWQ_RkLvLMk',
     image: 'tunes.jpg',
     link: '#',
     title: 'Trybe Tunes',
