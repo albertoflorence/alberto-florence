@@ -27,7 +27,7 @@ export default function Portfolio() {
               fill
               className="object-cover"
             />
-            <div className="absolute inset-0 flex select-none flex-col items-center justify-evenly bg-orange text-white opacity-0 shadow-zinc-600 duration-300 text-shadow hover:opacity-90">
+            <div className="absolute inset-0 flex select-none flex-col items-center justify-evenly bg-orange text-white opacity-0 shadow-zinc-600 duration-500 text-shadow hover:opacity-90">
               <h3 className="text-2xl drop-shadow-2xl">{title}</h3>
               <p className="max-w-xs justify-center text-center">{description}</p>
               <div className="flex gap-3">
