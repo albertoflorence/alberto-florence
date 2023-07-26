@@ -1,6 +1,9 @@
 import Grid from './Grid';
 import { Github } from './Icons/Github';
+import Css from './Technologies/Css';
 import Express from './Technologies/Express';
+import Html from './Technologies/Html';
+import Javascript from './Technologies/Javascript';
 import Jest from './Technologies/Jest';
 import Nextjs from './Technologies/Nextjs';
 import Nodejs from './Technologies/Nodejs';
@@ -18,6 +21,7 @@ export default function Skills() {
           href={link}
           target="_blank"
           title={title}
+          aria-label={title}
           className="block scale-75 fill-slate-600 transition-transform hover:scale-90 dark:fill-gray-50"
         >
           {<Skill />}
@@ -38,4 +42,7 @@ const skills = [
   { Skill: Nodejs, link: 'https://nodejs.org', title: 'Node.js' },
   { Skill: Express, link: 'https://expressjs.com', title: 'Express' },
   { Skill: Github, link: 'https://github.com', title: 'Github' },
+  { Skill: Javascript, link: 'https://javascript.com', title: 'Javascript' },
+  { Skill: Css, link: 'https://www.css3.com', title: 'CSS' },
+  { Skill: Html, link: 'https://html5.org/', title: 'HTML' },
 ];
