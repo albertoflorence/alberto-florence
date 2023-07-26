@@ -34,6 +34,7 @@ export default function Modal({
   return (
     <dialog
       ref={modalRef}
+      onClose={onClose}
       onClick={({ target }) => onClose && target === modalRef.current && onClose()}
       className={clsx(
         'overflow-visible p-0 outline-none backdrop:bg-black/50 dark:text-gray-50',

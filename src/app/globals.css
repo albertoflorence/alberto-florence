@@ -5,3 +5,27 @@
 body {
   color: #19191b;
 }
+
+.avatar-loader {
+  fill:none;
+  stroke:#d47559;
+  stroke-linecap: round;
+  stroke-width: 2;
+  stroke-dasharray: 1;
+  stroke-dashoffset: 0;
+  animation: stroke-draw 4s ease-out infinite alternate;
+  position: absolute;
+  top: 0;
+}
+
+@keyframes stroke-draw {
+  from{
+    stroke:#d47559;
+    stroke-dasharray: 1;
+  }
+  to{
+    stroke:#ffcdbe;
+    transform:rotate(180deg);
+    stroke-dasharray: 5;
+  }
+}
