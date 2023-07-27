@@ -1,36 +1,88 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Portfolio
 
-## Getting Started
+![Preview do Portfolio](./portfolio.jpg)
 
-First, run the development server:
+## Descrição
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+Bem-vindo ao meu Portfolio! Este é um site pessoal onde você pode conhecer mais sobre mim, explorar meus projetos, habilidades e ver vídeos de demonstração dos meus trabalhos. Além disso, você também pode acessar o código-fonte dos projetos diretamente no GitHub.
+
+## Tecnologias Utilizadas
+
+O projeto foi desenvolvido utilizando as seguintes tecnologias:
+
+- Next.js
+- Tailwind CSS
+- TypeScript
+
+## Como Executar o Projeto
+
+Para visualizar o meu Portfolio em sua máquina local, siga os passos abaixo:
+
+1. Faça o clone deste repositório em um diretório de sua preferência utilizando o seguinte comando:
+
+```
+git clone git@github.com:albertoflorence/alberto-florence.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Navegue até o diretório do projeto:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+cd alberto-florence
+```
 
-[http://localhost:3000/api/hello](http://localhost:3000/api/hello) is an endpoint that uses [Route Handlers](https://beta.nextjs.org/docs/routing/route-handlers). This endpoint can be edited in `app/api/hello/route.ts`.
+3. Instale as dependências necessárias executando o seguinte comando:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+```
+npm install
+```
 
-## Learn More
+4. Com todas as dependências instaladas, agora você pode iniciar o servidor de desenvolvimento usando o seguinte comando:
 
-To learn more about Next.js, take a look at the following resources:
+```
+npm run dev
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+O site estará acessível em [http://localhost:3000](http://localhost:3000).
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Navegação
 
-## Deploy on Vercel
+No meu Portfolio, você encontrará as seguintes seções:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **About Me:** Saiba mais sobre minha experiência, educação e interesses.
+- **Portfolio:** Explore os projetos que desenvolvi, com informações detalhadas, vídeos de demonstração e links para o GitHub.
+- **Skills:** Descubra as habilidades técnicas e conhecimentos que possuo.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Estrutura do Projeto
+
+Aqui está uma breve visão geral da estrutura de pastas do projeto:
+
+```
+portfolio/
+  ├── app/
+  │   ├── layout.tsx
+  │   ├── page.tsx
+  │   ├── globals.css.tsx
+  ├── components/
+  │   ├── AboutMe.tsx
+  │   ├── Portfolio.tsx
+  │   ├── Skills.tsx
+  │   └── ...
+  ├── public/
+  │   ├── images/
+  │   │   ├── project1.jpg
+  │   │   ├── project2.jpg
+  │   │   └── ...
+  │   └── ...
+  ├── tsconfig.json
+  ├── tailwind.config.js
+  ├── package.json
+  └── README.md
+```
+
+- A pasta `app` contém os arquivos que representa a página do Portfolio.
+- `components` contém os componentes React utilizados no projeto.
+- `public` contém arquivos estáticos, como imagens e outros recursos.
+- `tsconfig.json` é o arquivo de configuração do TypeScript.
+- `tailwind.config.json` é o arquivo de configuração do Tailwind.
+
+Sinta-se à vontade para explorar e modificar o código conforme suas necessidades.
