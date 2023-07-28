@@ -97,6 +97,7 @@ const projects = [
       'https://dms-exp2.licdn.com/playlist/vid/D4D05AQF14Eg1amyJbQ/mp4-720p-30fp-crf28/0/1689951224727?e=1690905600&v=beta&t=SMqHSm4b242ksbmyTfzceZGrPxbAbGDXGc5so9hTzzk',
     image: 'recipes-app.jpg',
     github: 'https://github.com/albertoflorence/recipes-app',
+    link: 'https://recipes-af.vercel.app',
     title: 'Recipes App',
     description: (
       <span>
@@ -109,6 +110,7 @@ const projects = [
     video:
       'https://dms-exp2.licdn.com/playlist/vid/D4D05AQEE8D0-zKoy7w/mp4-720p-30fp-crf28/0/1688759152336?e=1690905600&v=beta&t=fQA3QII1e8Kw89MvQ6AfkTNhk9PWGN4dgB_WYDX8NMI',
     image: 'starwars.jpg',
+    link: 'https://starwars-af.vercel.app',
     github: 'https://github.com/albertoflorence/starwars',
     title: 'Star Wars',
     description: (
@@ -122,6 +124,7 @@ const projects = [
       'https://dms-exp2.licdn.com/playlist/vid/D4D05AQHwuoZ1XUG7nw/mp4-720p-30fp-crf28/0/1682527221949?e=1690905600&v=beta&t=i__yPB5JrkXBK9gxGo-M8zEyiWWHnSIB_oq9DUBUjD4',
     image: 'pixel-art.jpg',
     github: 'https://github.com/albertoflorence/pixels-art',
+    link: 'https://pixels-art-af.vercel.app',
     title: 'Pixel Art',
     description: (
       <span>
@@ -134,6 +137,7 @@ const projects = [
       'https://dms-exp2.licdn.com/playlist/vid/D4D05AQG7paqE4vUW9Q/mp4-720p-30fp-crf28/0/1688060209459?e=1690905600&v=beta&t=pDXq5cw-SbY5hpBjAK6QcGmG8KMbZ_yJz3c8rnbLgzM',
     image: 'trivia.jpg',
     github: 'https://github.com/albertoflorence/trivia',
+    link: 'https://trivia-af.vercel.app',
     title: 'Trivia',
     description: (
       <span>
@@ -147,6 +151,7 @@ const projects = [
       'https://dms-exp2.licdn.com/playlist/vid/D4D05AQFXQkZWrFVjyg/mp4-720p-30fp-crf28/0/1686929809761?e=1690905600&v=beta&t=ELKu4qy9zCO9EX1H6i5xgjA-SlUsZCMJkKI3WgwjvJs',
     image: 'wallet.jpg',
     github: 'https://github.com/albertoflorence/trybewallet',
+    link: 'https://trybewallet-af.vercel.app',
     title: 'Trybe Wallet',
     description: (
       <span>
@@ -160,6 +165,7 @@ const projects = [
       'https://dms-exp2.licdn.com/playlist/vid/D4D05AQHOQL_HNcKIyw/mp4-720p-30fp-crf28/0/1683918495005?e=1690905600&v=beta&t=4dXRKssWXU3WBDiJMTKySlEx_J09-9ZrW1L019PBfoc',
     image: 'tryunfo.jpg',
     github: 'https://github.com/albertoflorence/tryunfo',
+    link: 'https://tryunfo-af.vercel.app/',
     title: 'Tryunfo',
     description: (
       <span>Projeto desenvolvido no módulo de front-end da {Trybe}, feito usando React</span>
@@ -170,6 +176,7 @@ const projects = [
       'https://dms-exp2.licdn.com/playlist/vid/D4D05AQHU1mek2Dr3uA/mp4-720p-30fp-crf28/0/1684534867614?e=1690905600&v=beta&t=ivZa_duykFbsdyg7GOCauP567yYHecGxNWQ_RkLvLMk',
     image: 'tunes.jpg',
     github: 'https://github.com/albertoflorence/trybetunes',
+    link: 'https://trybetunes-af.vercel.app',
     title: 'Trybe Tunes',
     description: (
       <span>
