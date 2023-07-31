@@ -93,6 +93,13 @@ const projects = [
       'Projeto fullstack com integração de várias techs como: Nextjs, Styled Components, Typescript, GraphQL, Jest, Cypress',
   },
   {
+    image: 'br-consultoria.jpg',
+    link: 'https://brconsultoriaempresarial.com/',
+    title: 'Br Consultoria',
+    description:
+      'Projeto real feito para uma empresa de consultoria, usando Nextjs, Tailwind e Typescript',
+  },
+  {
     video:
       'https://dms-exp2.licdn.com/playlist/vid/D4D05AQF14Eg1amyJbQ/mp4-720p-30fp-crf28/0/1689951224727?e=1690905600&v=beta&t=SMqHSm4b242ksbmyTfzceZGrPxbAbGDXGc5so9hTzzk',
     image: 'recipes-app.jpg',
