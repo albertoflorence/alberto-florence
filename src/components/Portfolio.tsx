@@ -86,7 +86,7 @@ const Trybe = (
 const projects = [
   {
     image: 'won-games.jpg',
-    link: 'https://curso-wongames.vercel.app',
+    link: 'https://wongames-af.vercel.app/',
     github: 'https://github.com/albertoflorence/react-avancado-curso',
     title: 'Won Games',
     description:
@@ -108,14 +108,15 @@ const projects = [
   },
   {
     video:
-      'https://dms-exp2.licdn.com/playlist/vid/D4D05AQEE8D0-zKoy7w/mp4-720p-30fp-crf28/0/1688759152336?e=1690905600&v=beta&t=fQA3QII1e8Kw89MvQ6AfkTNhk9PWGN4dgB_WYDX8NMI',
-    image: 'starwars.jpg',
-    link: 'https://starwars-af.vercel.app',
-    github: 'https://github.com/albertoflorence/starwars',
-    title: 'Star Wars',
+      'https://dms-exp2.licdn.com/playlist/vid/D4D05AQHU1mek2Dr3uA/mp4-720p-30fp-crf28/0/1684534867614?e=1690905600&v=beta&t=ivZa_duykFbsdyg7GOCauP567yYHecGxNWQ_RkLvLMk',
+    image: 'tunes.jpg',
+    github: 'https://github.com/albertoflorence/trybetunes',
+    link: 'https://trybetunes-af.vercel.app',
+    title: 'Trybe Tunes',
     description: (
       <span>
-        Projeto desenvolvido no módulo de front-end da {Trybe}, feito usando React e Context Api
+        Projeto desenvolvido no módulo de front-end da {Trybe}, feito usando React, React Router e
+        consumindo uma API
       </span>
     ),
   },
@@ -173,15 +174,13 @@ const projects = [
   },
   {
     video:
-      'https://dms-exp2.licdn.com/playlist/vid/D4D05AQHU1mek2Dr3uA/mp4-720p-30fp-crf28/0/1684534867614?e=1690905600&v=beta&t=ivZa_duykFbsdyg7GOCauP567yYHecGxNWQ_RkLvLMk',
-    image: 'tunes.jpg',
-    github: 'https://github.com/albertoflorence/trybetunes',
-    link: 'https://trybetunes-af.vercel.app',
-    title: 'Trybe Tunes',
+      'https://dms-exp2.licdn.com/playlist/vid/D4D05AQEE8D0-zKoy7w/mp4-720p-30fp-crf28/0/1688759152336?e=1690905600&v=beta&t=fQA3QII1e8Kw89MvQ6AfkTNhk9PWGN4dgB_WYDX8NMI',
+    image: 'starwars.jpg',
+    github: 'https://github.com/albertoflorence/starwars',
+    title: 'Star Wars',
     description: (
       <span>
-        Projeto desenvolvido no módulo de front-end da {Trybe}, feito usando React, React Router e
-        consumindo uma API
+        Projeto desenvolvido no módulo de front-end da {Trybe}, feito usando React e Context Api
       </span>
     ),
   },

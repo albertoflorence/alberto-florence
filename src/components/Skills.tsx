@@ -33,6 +33,9 @@ export default function Skills() {
 }
 
 const skills = [
+  { Skill: Javascript, link: 'https://javascript.com', title: 'Javascript' },
+  { Skill: Css, link: 'https://www.css3.com', title: 'CSS' },
+  { Skill: Html, link: 'https://html5.org/', title: 'HTML' },
   { Skill: Nextjs, link: 'https://nextjs.org', title: 'Next.js' },
   { Skill: ReactImage, link: 'https://react.dev', title: 'React' },
   { Skill: Jest, link: 'https://jestjs.io', title: 'Jest' },
@@ -42,7 +45,4 @@ const skills = [
   { Skill: Nodejs, link: 'https://nodejs.org', title: 'Node.js' },
   { Skill: Express, link: 'https://expressjs.com', title: 'Express' },
   { Skill: Github, link: 'https://github.com', title: 'Github' },
-  { Skill: Javascript, link: 'https://javascript.com', title: 'Javascript' },
-  { Skill: Css, link: 'https://www.css3.com', title: 'CSS' },
-  { Skill: Html, link: 'https://html5.org/', title: 'HTML' },
 ];
