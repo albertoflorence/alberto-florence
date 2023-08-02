@@ -14,7 +14,8 @@ export default function Stories({ open, onClose }: StoriesProps) {
   const ref = useRef<HTMLDivElement>(null);
 
   const handleClick = () => {
-    setCurrent((s) => (s < 4 ? s + 1 : 0));
+    const lastItem = stories.length - 1;
+    setCurrent((s) => (s < lastItem ? s + 1 : 0));
   };
 
   const style = {
@@ -34,7 +35,7 @@ export default function Stories({ open, onClose }: StoriesProps) {
           <div
             key={subtitle}
             ref={ref}
-            className="relative h-screen w-screen cursor-pointer lg:h-[600px] lg:w-[420px]"
+            className="relative h-screen w-screen cursor-pointer bg-slate-800 lg:h-[600px] lg:w-[420px]"
           >
             <Image fill src={image} alt={subtitle} className="h-full object-cover" />
             <p className="absolute bottom-12 w-full px-1 text-center text-xl text-white shadow-black text-shadow">

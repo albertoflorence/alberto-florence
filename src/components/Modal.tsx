@@ -39,6 +39,7 @@ export default function Modal({
       className={clsx(
         'overflow-visible p-0 outline-none backdrop:bg-black/50 dark:text-gray-50',
         fullScreen ? 'bg-transparent max-lg:m-0' : 'rounded-xl dark:bg-slate-800',
+        open && 'fadeIn',
       )}
     >
       <div className={className} onClick={onClick}>
