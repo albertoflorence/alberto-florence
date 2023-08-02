@@ -1,6 +1,6 @@
 export default function Javascript() {
   return (
-    <svg viewBox="0 0 128 128">
+    <svg viewBox="0 0 128 128" aria-label="javascript">
       <path
         d="M4,14a10,10 0 0 1 10,-10h100a10,10 0 0 1 10,10v100a10,10 0 0 1 -10,10h-100a10,10 0 0 1 -10,-10z"
         fill="#F0DB4F"

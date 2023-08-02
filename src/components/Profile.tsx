@@ -10,7 +10,7 @@ export default function Profile() {
       {texts.map((text) => (
         <div
           key={text}
-          className="items-center text-center text-2xl text-gray-200 dark:text-gray-100"
+          className="items-center text-center text-2xl text-gray-200 dark:text-gray-100 max-[300px]:text-xl"
         >
           <p>{text}</p>
         </div>

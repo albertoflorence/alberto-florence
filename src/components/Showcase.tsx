@@ -33,8 +33,8 @@ export default function MySkills() {
           on && '-translate-x-1/2',
         )}
       >
-        <Portfolio />
-        <Skills />
+        <Portfolio className={clsx(on && 'invisible')} />
+        <Skills className={clsx(on || 'invisible')} />
       </section>
     </section>
   );

@@ -1,6 +1,6 @@
 export default function Html() {
   return (
-    <svg viewBox="0 0 128 128">
+    <svg viewBox="0 0 128 128" aria-label="html">
       <path
         fill="#E44D26"
         d="M27.854 116.354l-8.043-90.211h88.378l-8.051 90.197-36.192 10.033z"

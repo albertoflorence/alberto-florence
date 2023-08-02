@@ -1,6 +1,6 @@
 export default function Typescript() {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-label="typescript">
       <rect fill="white" width="13" height="10" y="10" x="7" />
       <path
         fill="#3178c6"

@@ -10,9 +10,9 @@ export default function Info() {
   ];
   return (
     <div className="flex flex-col gap-y-5">
-      <h1 className="text-5xl text-gray-300 dark:text-white">Alberto Florence</h1>
+      <h1 className="text-5xl text-gray-300 dark:text-white max-sm:text-4xl">Alberto Florence</h1>
       <p className="text-2xl text-gray-200 dark:text-gray-100">Software Engineer</p>
-      <div className="flex gap-7">
+      <div className="flex flex-wrap gap-7">
         {icons.map(({ Element, key, link }) => (
           <a key={key} href={link} target="_blank">
             <Element

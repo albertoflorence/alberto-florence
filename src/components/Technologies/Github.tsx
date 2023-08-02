@@ -1,6 +1,6 @@
 export default function Github() {
   return (
-    <svg viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+    <svg viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg" aria-label="github">
       <g fill="#181616">
         <path
           fill-rule="evenodd"

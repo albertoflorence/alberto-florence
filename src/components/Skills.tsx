@@ -12,9 +12,14 @@ import Redux from './Technologies/Redux';
 import Tailwind from './Technologies/Tailwind';
 import Typescript from './Technologies/Typescript';
 
-export default function Skills() {
+interface SkillsProps {
+  className?: string;
+}
+
+export default function Skills({ className }: SkillsProps) {
   return (
     <Grid
+      className={className}
       items={skills.map(({ Skill, link, title }, index) => (
         <a
           key={index}
