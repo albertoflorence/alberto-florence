@@ -25,13 +25,7 @@ export default function Portfolio({ className }: PortfolioProps) {
         className={className}
         items={projects.map(({ image, link, title, description, video, github }) => (
           <div key={image} className="relative h-full w-full">
-            <Image
-              title={title}
-              src={`/images/${image}`}
-              alt={title}
-              fill
-              className="object-cover"
-            />
+            <Image title={title} src={`/images/${image}`} alt={title} fill />
             <div className="absolute inset-0 flex select-none flex-col items-center justify-evenly bg-orange text-white opacity-0 shadow-zinc-600 duration-500 text-shadow hover:opacity-90">
               <h2 className="text-2xl drop-shadow-2xl">{title}</h2>
               <p className="max-w-xs justify-center text-center">{description}</p>
