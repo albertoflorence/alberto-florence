@@ -48,7 +48,6 @@ export default function Gallery({ items, initialIndex, onClose }: GalleryProps) 
       onMouseLeave={() => setShow(false)}
     >
       <video
-        muted
         src={video}
         controls
         onPause={() => setIsPaused(true)}
@@ -56,6 +55,7 @@ export default function Gallery({ items, initialIndex, onClose }: GalleryProps) 
           setIsPaused(false);
           handleInteraction();
         }}
+        width="1024px"
       />
       <button
         aria-label="previous"

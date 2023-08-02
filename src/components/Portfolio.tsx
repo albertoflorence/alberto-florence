@@ -100,8 +100,7 @@ const projects = [
       'Projeto real feito para uma empresa de consultoria, usando Nextjs, Tailwind e Typescript',
   },
   {
-    video:
-      'https://dms-exp2.licdn.com/playlist/vid/D4D05AQF14Eg1amyJbQ/mp4-720p-30fp-crf28/0/1689951224727?e=1690905600&v=beta&t=SMqHSm4b242ksbmyTfzceZGrPxbAbGDXGc5so9hTzzk',
+    video: './videos/recipes-app.mp4',
     image: 'recipes-app.jpg',
     github: 'https://github.com/albertoflorence/recipes-app',
     link: 'https://recipes-af.vercel.app',
@@ -114,8 +113,7 @@ const projects = [
     ),
   },
   {
-    video:
-      'https://dms-exp2.licdn.com/playlist/vid/D4D05AQHU1mek2Dr3uA/mp4-720p-30fp-crf28/0/1684534867614?e=1690905600&v=beta&t=ivZa_duykFbsdyg7GOCauP567yYHecGxNWQ_RkLvLMk',
+    video: './videos/tunes.mp4',
     image: 'tunes.jpg',
     github: 'https://github.com/albertoflorence/trybetunes',
     link: 'https://trybetunes-af.vercel.app',
@@ -128,9 +126,8 @@ const projects = [
     ),
   },
   {
-    video:
-      'https://dms-exp2.licdn.com/playlist/vid/D4D05AQHwuoZ1XUG7nw/mp4-720p-30fp-crf28/0/1682527221949?e=1690905600&v=beta&t=i__yPB5JrkXBK9gxGo-M8zEyiWWHnSIB_oq9DUBUjD4',
-    image: 'pixel-art.jpg',
+    video: './videos/pixels-art.mp4',
+    image: 'pixels-art.jpg',
     github: 'https://github.com/albertoflorence/pixels-art',
     link: 'https://pixels-art-af.vercel.app',
     title: 'Pixel Art',
@@ -141,8 +138,7 @@ const projects = [
     ),
   },
   {
-    video:
-      'https://dms-exp2.licdn.com/playlist/vid/D4D05AQG7paqE4vUW9Q/mp4-720p-30fp-crf28/0/1688060209459?e=1690905600&v=beta&t=pDXq5cw-SbY5hpBjAK6QcGmG8KMbZ_yJz3c8rnbLgzM',
+    video: './videos/trivia.mp4',
     image: 'trivia.jpg',
     github: 'https://github.com/albertoflorence/trivia',
     link: 'https://trivia-af.vercel.app',
@@ -155,8 +151,7 @@ const projects = [
     ),
   },
   {
-    video:
-      'https://dms-exp2.licdn.com/playlist/vid/D4D05AQFXQkZWrFVjyg/mp4-720p-30fp-crf28/0/1686929809761?e=1690905600&v=beta&t=ELKu4qy9zCO9EX1H6i5xgjA-SlUsZCMJkKI3WgwjvJs',
+    video: './videos/wallet.mp4',
     image: 'wallet.jpg',
     github: 'https://github.com/albertoflorence/trybewallet',
     link: 'https://trybewallet-af.vercel.app',
@@ -169,8 +164,7 @@ const projects = [
     ),
   },
   {
-    video:
-      'https://dms-exp2.licdn.com/playlist/vid/D4D05AQHOQL_HNcKIyw/mp4-720p-30fp-crf28/0/1683918495005?e=1690905600&v=beta&t=4dXRKssWXU3WBDiJMTKySlEx_J09-9ZrW1L019PBfoc',
+    video: './videos/tryunfo.mp4',
     image: 'tryunfo.jpg',
     github: 'https://github.com/albertoflorence/tryunfo',
     link: 'https://tryunfo-af.vercel.app/',
@@ -180,8 +174,7 @@ const projects = [
     ),
   },
   {
-    video:
-      'https://dms-exp2.licdn.com/playlist/vid/D4D05AQEE8D0-zKoy7w/mp4-720p-30fp-crf28/0/1688759152336?e=1690905600&v=beta&t=fQA3QII1e8Kw89MvQ6AfkTNhk9PWGN4dgB_WYDX8NMI',
+    video: './videos/starwars.mp4',
     image: 'starwars.jpg',
     github: 'https://github.com/albertoflorence/starwars',
     title: 'Star Wars',
