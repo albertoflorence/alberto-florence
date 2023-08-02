@@ -6,7 +6,7 @@ export default function Avatar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <section className="relative">
+    <section className="relative select-none">
       <div
         className="relative flex h-52 w-52 shrink-0 cursor-pointer items-center justify-center rounded-full"
         onClick={() => setOpen(true)}
