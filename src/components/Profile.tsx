@@ -1,7 +1,7 @@
 const texts = [
-  'Currently studying programming',
-  'Excited to collaborate with others',
-  'Committed to continuous improvement',
+  'Atualmente estudando programação',
+  'Animado para colaborar com outras pessoas',
+  'Empenhado com a melhoria contínua.',
 ];
 
 export default function Profile() {

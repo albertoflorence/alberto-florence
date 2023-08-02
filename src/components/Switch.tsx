@@ -5,7 +5,7 @@ interface SwitchProps {
   onChange: (s: boolean) => void;
 }
 
-const itens = ['Portfolio', 'Skills'];
+const itens = ['Portfólio', 'Habilidades'];
 
 export default function Switch({ on, onChange }: SwitchProps) {
   return (
@@ -13,7 +13,7 @@ export default function Switch({ on, onChange }: SwitchProps) {
       <div className="flex h-28 w-full cursor-pointer gap-5 rounded-[20px] bg-white px-5 py-4 shadow-md dark:bg-bgDarkLight">
         {itens.map((item, i) => (
           <button
-            onClick={() => (item === 'Portfolio' ? onChange(false) : onChange(true))}
+            onClick={() => (item === itens[0] ? onChange(false) : onChange(true))}
             key={item}
             className={clsx(
               !on && i == 0 && 'bg-gray-50 dark:bg-bgDark',

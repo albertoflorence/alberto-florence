@@ -13,11 +13,11 @@ export default function AboutMe() {
         className="bg-white text-gray-300 shadow-md dark:bg-bgDarkLight dark:text-gray-100"
         onClick={() => setOpen(true)}
       >
-        About me
+        Sobre mim
       </Button>
       <Modal open={open} onClose={() => setOpen(false)} className="max-w-4xl p-7">
         <h2 className="relative mb-6 w-fit text-3xl font-bold">
-          About Me
+          Sobre mim
           <div className="w-2/5 border-b-[3px] border-orange"></div>
         </h2>
         <div className="flex flex-col gap-5">

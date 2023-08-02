@@ -13,7 +13,7 @@ body {
   stroke-width: 2;
   stroke-dasharray: 1;
   stroke-dashoffset: 0;
-  animation: stroke-draw 4s ease-out infinite alternate;
+  animation: stroke-draw 4s ease-in-out infinite alternate;
   position: absolute;
   top: 0;
 }
