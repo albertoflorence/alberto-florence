@@ -37,7 +37,12 @@ export default function Stories({ open, onClose }: StoriesProps) {
             ref={ref}
             className="relative h-screen w-screen cursor-pointer bg-slate-800 lg:h-[600px] lg:w-[420px]"
           >
-            <Image fill src={image} alt={subtitle} className="h-full object-cover" />
+            <Image
+              fill
+              src={image}
+              alt={subtitle}
+              className="h-full border border-zinc-400 object-cover lg:rounded-xl"
+            />
             <p className="absolute bottom-12 w-full px-1 text-center text-xl text-white shadow-black text-shadow">
               {subtitle}
             </p>
@@ -58,23 +63,18 @@ export default function Stories({ open, onClose }: StoriesProps) {
 const stories = [
   {
     image: '/images/luna.jpg',
-    subtitle: 'testando um texto',
+    subtitle: 'A cachorra mais linda do mundo',
   },
   {
-    image: '/images/luna.jpg',
-    subtitle: 'testando um texto um pouquinho maior',
+    image: '/images/pc.png',
+    subtitle: 'Ambiente de trabalho',
   },
   {
-    image: '/images/luna.jpg',
-    subtitle: 'testando um texto relativamente maior, mas nem tanto',
+    image: '/images/luna2.jpg',
+    subtitle: 'A cachorra mais divertida do mundo',
   },
   {
-    image: '/images/luna.jpg',
-    subtitle: 'testando um texto que deveria ser maior, mas ainda sim não é o maior de todos',
-  },
-  {
-    image: '/images/luna.jpg',
-    subtitle:
-      'testando um texto grande, o maior de todos, nenhum se compara a ele, nem mesmo ele mesmo !!',
+    image: '/images/overwatch.jpg',
+    subtitle: 'Descontraindo no Overwatch 2',
   },
 ];
